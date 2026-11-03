@@ -1,0 +1,21 @@
+# Never commit real or generated data. data/ and output/ are where the pipeline reads and writes by default;
+# the patterns below also cover CLINIC_DATA / CLINIC_OUT pointed somewhere inside the repo.
+data/
+output/
+*.db
+*.db-shm
+*.db-wal
+*.salt
+.salt
+*.csv
+*.json
+*.xlsx
+*.pdf
+.env
+.env.*
+*.env
+# Python and OS noise
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
